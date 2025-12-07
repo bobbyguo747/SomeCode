@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="keywords" content="兰州大学">
+    <title>兰州大学</title>
+    <script>
+        ;(function () {
+            var src = './static/eruda.min.js'; if (!/debug=true/.test(window.location)) return;
+            if (!/debug=true/.test(window.location)) return;
+            document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+            document.write('<scr' + 'ipt>eruda.init();</scr' + 'ipt>');
+        })();
+    </script>
+    <script src="./static/themes/pro/js/redirect.js?v=a5e1a8216ddccf7f"></script>
+    <link type="images/x-icon" rel="shortcut icon" href="./static/themes/pro/images/favicon.ico?v=a5e1a8216ddccf7f">
+    <link rel="stylesheet" href="./static/themes/pro/lib/material/material.min.css?v=a5e1a8216ddccf7f">
+    <link rel="stylesheet" href="./static/themes/pro/lib/ionicons/ionicons.min.css?v=a5e1a8216ddccf7f">
+    <link rel="stylesheet" href="./static/themes/pro/css/components.css?v=a5e1a8216ddccf7f">
+    <link rel="stylesheet" href="./static/themes/pro/css/main.css?v=a5e1a8216ddccf7f">
+    <link rel="stylesheet" href="./static/themes/pro/css/custom.css?v=a5e1a8216ddccf7f">
+    <script src="./static/themes/pro/js/lite.js?v=a5e1a8216ddccf7f"></script>
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="./static/themes/pro/css/patch.css?v=a5e1a8216ddccf7f">
+    <script src="./static/themes/pro/lib/patch/respond.min.js?v=a5e1a8216ddccf7f"></script>
+    <script src="./static/themes/pro/lib/patch/rem.min.js?v=a5e1a8216ddccf7f"></script>
+    <script src="./static/themes/pro/lib/patch/html5shiv-printshiv.min.js?v=a5e1a8216ddccf7f"></script>
+    <![endif]-->
+</head>
+<body>
+
+<div id="app" class="main">
+    
+    <header class="header" ref="header">
+        <img src="./static/themes/pro/images/logo/logo.png?v=a5e1a8216ddccf7f" class="logo" alt="logo">
+        
+        <div class="change-lang">
+            <i class="material-icons select-icon">translate</i>
+            <select id="change-lang" value="default">
+                <option class="option" value="default" style="display: none"></option>
+                <option class="option" value="zh-CN">中文 (简体)</option>
+                <option class="option" value="en-US">English</option>
+            </select>
+        </div>
+    </header>
+    
+    <section class="section" ref="section">
+        
+        <div class="panel panel-login">
+            
+            <div class="panel-header">
+                <img src="./static/themes/pro/images/logo/logo.png?v=a5e1a8216ddccf7f" class="logo" alt="logo">
+                <div class="change-lang">
+                    <span class="zh" id="zh">中文</span>
+                    <span class="en" id="en">English</span>
+                </div>
+            </div>
+            
+            <div class="panel-tab">
+                <div class="tab-item active" data="sso">统一认证</div>
+                <div class="tab-item" data="account">账号认证</div>
+            </div>
+            <div class="panel-sso">
+                <button type="button" class="btn-login" id="login-sso">统一身份认证</button>
+            </div>
+            <div class="panel-account">
+                
+                <div class="panel-row">
+                    <i class="material-icons input-icon">person</i>
+                    <label class="input-label" for="username">账号</label>
+                    <input type="text" id="username" class="input-box input-username" placeholder="请输入您的上网账号">
+                    
+                    
+                    <div class="domain custom-select">
+                        <div class="select-selected">请选择...</div>
+                        <div class="select-items">
+                            
+                            <div data-value="" ZgotmplZ>@lzu.edu.cn</div>
+                            
+                            <div data-value="@study" ZgotmplZ>@eLearning</div>
+                            
+                        </div>
+                        <select class="domain realSelect" id="domain realSelect" style="display:none">
+                            
+                            <option value="" ZgotmplZ>@lzu.edu.cn</option>
+                            
+                            <option value="@study" ZgotmplZ>@eLearning</option>
+                            
+                        </select>
+                    </div>
+                    
+                </div>
+                
+                <div class="panel-row">
+                    <i class="material-icons input-icon">lock</i>
+                    <label class="input-label" for="password">密码</label>
+                    <input type="password" id="password" class="input-box" placeholder="请输入您的密码">
+                </div>
+                
+                
+                
+                <div class="panel-row panel-captcha">
+                    <i class="material-icons input-icon">lock</i>
+                    <label class="input-label" for="captcha">验证码</label>
+                    <input type="text" id="captcha" class="input-box input-captcha" placeholder="请输入验证码">
+                    <div class="captcha-img" id="captchaImg"></div>
+                </div>
+                <div class="panel-row">
+                    
+                    <div class="remember">
+                        <input type="checkbox" id="remember" class="input-remember">
+                        <label for="remember" class="label-remember">记住账号</label>
+                    </div>
+                    
+                    <div class="forget" id="forget">
+                        <span>修改密码</span>
+                    </div>
+                </div>
+                
+                <div class="panel-row">
+                    <button type="button" class="btn-login" id="login-account">登录</button>
+                </div>
+            </div>
+            
+            <div class="panel-row panel-function">
+                
+                
+                    <span class="btn-self-service" id="self-service">自助服务</span>
+                
+                
+                
+                    <span class="login-mode mode-sms" data-mode="sms">短信认证</span>
+                
+                
+                <span class="btn-pay pc-pay" id="btn-pay">网费充值</span>
+            </div>
+            
+            <div class="panel-row login-addmode">
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </div>
+            <div class="panel-row">
+                
+                
+            </div>
+            
+            <div class="panel-notice" id="notice-container">
+                <div class="panel-row title-container">
+                    <h3 class="title" id="notice-title"></h3>
+                </div>
+                <div class="content" id="notice-content"></div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <p class="copyright">兰州大学</p>
+    </footer>
+</div>
+
+<script>
+    var CONFIG = {
+        page   : 'account',
+        acid   : "2",
+        ip     : "172.23.39.85",
+        nas    : "",
+        mac    : "",
+        url    : "",
+        lang   : "zh-CN" || 'zh-CN',
+        isIPV6 :  false ,
+        portal : {"AuthIP":"10.10.0.166","AuthIP6":"","ServiceIP":"https://login.lzu.edu.cn:8800","DoubleStackPC":false,"DoubleStackMobile":false,"AuthMode":false,"CloseLogout":false,"MacAuth":true,"RedirectUrl":true,"OtherPCStack":"IPV4","OtherMobileStack":"IPV4","MsgApi":"new","PublicSuccessPages":true,"TrafficCarry":1000,"UserAgreeSwitch":false,"DialSwitch":false,"MultiAuthSwitch":false,"AccountFilter":"","DoubleStackOnline":0},
+        notice : "list",
+        priceList : {"Prices":"5,10,20,50,100","Default":"0.01","BalanceWarning":"5"}
+    };
+</script>
+<script src="./static/themes/pro/lib/all.min.js?v=20180302?v=a5e1a8216ddccf7f"></script>
+<script src="./static/themes/pro/lib/patch/patch.es6.js?v=a5e1a8216ddccf7f"></script>
+<script src="./static/themes/pro/js/creater.js?v=a5e1a8216ddccf7f"></script>
+<script src="./static/themes/pro/js/lang.js?v=a5e1a8216ddccf7f"></script>
+<script src="./static/themes/pro/js/Utils.js?v=a5e1a8216ddccf7f"></script>
+<script src="./static/themes/pro/js/Portal.js?v=a5e1a8216ddccf7f"></script>
+<script src="./static/themes/pro/js/main.js?v=a5e1a8216ddccf7f"></script>
+</body>
+</html>
