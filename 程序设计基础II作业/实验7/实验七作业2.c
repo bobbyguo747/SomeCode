@@ -227,11 +227,11 @@ void deleteNode(struct stu_info **head) {
                    current->stu_sex, current->stu_score);
             printf("确认删除？(Y/N): ");
             char confirm = getchar();
-            getchar(); // 清除换行符
+            getchar(); 
             if (confirm == 'Y' || confirm == 'y') {
-                if (prev == NULL) { // 删除头节点
+                if (prev == NULL) { 
                     *head = current->next;
-                } else { // 删除中间或尾节点
+                } else { 
                     prev->next = current->next;
                 }
                 free(current);
